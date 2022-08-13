@@ -11,7 +11,7 @@ import java.util.Optional;
 @Service
 public class AgendaService {
     @Autowired
-    private AgendaRepository repository;
+    AgendaRepository repository;
 
     public List<AgendaModel> buscarTodosContatos(){
         return repository.findAll();

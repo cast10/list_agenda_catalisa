@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
-@Controller
+@RestController
 public class AgendaController {
     @Autowired
-    private AgendaService service;
+    AgendaService service;
 
     @GetMapping(path = "/agenda")
     public List<AgendaModel> buscarcontatos(){
